@@ -46,15 +46,14 @@
                     Tutoring</a></p>
         </div>
     </footer>
+
     <script>
-        /*Referenced from https://www.javascripttutorial.net/javascript-dom/javascript-domcontentloaded/*/
-        /*Referenced from https://www.w3schools.com/js/js_dates.asp*/
-        document.addEventListener("DOMContentLoaded", function () {
-            const yearSpan = document.getElementById("year");
-            const currentYear = new Date().getFullYear();
-            yearSpan.textContent = currentYear;
-        });
+        // Referenced from https://www.w3schools.com/js/js_dates.asp
+        const yearSpan = document.getElementById("year");
+        const currentYear = new Date().getFullYear();
+        yearSpan.textContent = currentYear;
     </script>
+
 </body>
 
 </html>
