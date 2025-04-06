@@ -2,6 +2,7 @@
     position: absolute;
     color: white;
     top: -40px;
+    right: 0;
 }
 
 .skip a:focus {
@@ -281,6 +282,7 @@ footer a:focus {
     color: #00274C;
 }
 
+/*Referenced from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
 #back-to-top {
     position: fixed;
     bottom: 30px;

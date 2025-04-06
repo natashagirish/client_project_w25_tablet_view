@@ -134,12 +134,14 @@
     <button id="back-to-top">Back to top</button>
 
     <script>
+        /*Referenced from https://www.javascripttutorial.net/javascript-dom/javascript-domcontentloaded/*/
+        /*Referenced from https://www.w3schools.com/js/js_dates.asp*/
         document.addEventListener("DOMContentLoaded", function () {
             const yearSpan = document.getElementById("year");
             const currentYear = new Date().getFullYear();
             yearSpan.textContent = currentYear;
         });
-
+        /*Referenced from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp*/
         document.addEventListener("DOMContentLoaded", function () {
             const backToTopButton = document.getElementById("back-to-top");
 
