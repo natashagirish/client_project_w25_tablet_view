@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>UMSI Tutoring</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food_pantry.html">Food Pantry</a></li>
+                <li><a href="caps.html">CAPS</a></li>
+                <li><a href="umsi_tutoring.html" class="active">UMSI Tutoring</a></li>
+            </ul>
+        </nav>
+        <h1>UMSI Tutoring & Academic Support</h1>
+    </header>
+
+    <main id="main">
+        <div class="academic-support">
+            <div>
+                <p>The Academic Success Team at UMSI is dedicated to supporting students inside
+                    and outside of the classroom. This site is dedicated to connecting students
+                    to tutoring and academic support resources. Resources covered on this site include: </p>
+                <ul class="support-list">
+                    <li>UMSI Peer Tutoring</li>
+                    <li>Programming Peer Tutoring</li>
+                    <li>Math Peer Tutoring</li>
+                    <li>Additional Academic Support Resources</li>
+                    <li>Peer-to-Peer Tutor Directory</li>
+                </ul>
+                <br><br>
+            </div>
+            <div>
+                <img src="images/Tutoring1.JPG" alt="Five people discussing assignment around a table" width="300">
+            </div>
+        </div>
+        <br>
+        <div class="info-grid tutoring-grid">
+            <div>
+                <h2>UMSI Peer Tutoring Program</h2><br>
+                <img src="images/Tutoring2.JPG" alt="Students engaging in a peer tutoring session" width="400"><br>
+                <p>
+                    In partnership with our UMSI faculty, the UMSI Peer Tutoring program is an opportunity for UMSI
+                    students and students taking UMSI courses to engage with peer tutors and receive assistance and
+                    support in UMSI courses.
+                </p>
+            </div>
+            <div>
+                <h2>Contact</h2><br>
+                <p>For information regarding student support and tutoring, please email umsi.academicsuccess@umich.edu.
+                </p>
+            </div>
+        </div>
+        <!-- Content taken from https://sites.google.com/umich.edu/umsitutoring/home?authuser=0 website's homepage. -->
+    </main>
+    <footer>
+        <div class="footer-image">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </div>
+        <div class="footer-links">
+            <p>© <span id="year"></span> University of Michigan School of Information</p>
+            <p>MSI Academic Advising | <a
+                    href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI
+                    Academic Advising</a></p>
+            <p>Food Pantry | <a href="https://mbc.studentlife.umich.edu/">Food Pantry</a></p>
+            <p>CAPS | <a href="https://caps.umich.edu/">Counseling and Psychological Services</a></p>
+            <p>UMSI Tutoring | <a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=0">UMSI
+                    Tutoring</a></p>
+        </div>
+    </footer>
+    <button id="back-to-top">Back to top</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const yearSpan = document.getElementById("year");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const backToTopButton = document.getElementById("back-to-top");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 200) {
+                    backToTopButton.classList.add("show");
+                } else {
+                    backToTopButton.classList.remove("show");
+                }
+            });
+
+            backToTopButton.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,380 @@
+.skip a {
+    position: absolute;
+    color: white;
+    top: -40px;
+}
+
+.skip a:focus {
+    color: white;
+    top: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #00274C;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.umsi-logo {
+    width: 50%;
+    padding-top: 24px;
+    align-items: center;
+}
+
+.umsi-logo-footer {
+    width: 10%;
+    padding-top: 24px;
+    align-items: center;
+}
+
+nav {
+    background-color: #00274C;
+    padding: 36px 8px;
+    margin-bottom: 24px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    padding: 24px 0;
+    text-decoration: none;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #FFCB05;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #FFCB05;
+    padding: 24px 24px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    color: #FFCB05;
+}
+
+h3 {
+    font-size: 16px;
+    color: #FFCB05;
+}
+
+p {
+    font-size: 18px;
+    padding: 12px;
+    line-height: 1.6;
+}
+
+img {
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+ol li {
+    padding: 12px 0;
+    border-bottom: 1px solid #1D4871;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ol li:last-child {
+    border-bottom: none;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.info-grid a {
+    color: white;
+}
+
+.info-grid a:hover {
+    color: #FFCB05;
+}
+
+/* Style for each grid item */
+.info-grid div {
+    background-color: #072F55;
+    grid-column: 1 / -1;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* .info-grid div p {
+    word-break: break-all;
+} */
+
+.info-grid section {
+    background-color: #072F55;
+    grid-column: 1 / -1;
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-grid img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info-grid ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-grid li {
+    padding: 12px 0;
+    border-bottom: 1px solid #1D4871;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.info-grid li:last-child {
+    padding: 12px 0;
+    border-bottom: none;
+}
+
+.support-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+.support-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid #1D4871;
+}
+
+.support-list li:last-child {
+    padding: 12px 0;
+    border-bottom: none;
+}
+
+footer {
+    background-color: #00213F;
+    color: white;
+    padding: 20px;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+footer p {
+    font-size: 14px;
+    padding: 6px;
+}
+
+footer .footer-image {
+    grid-row: 1 / -1;
+    width: 60%;
+}
+
+footer a {
+    color: #F1B800;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #FFD700;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+
+.footer-links p:first-child {
+    font-size: 14px;
+    font-style: italic;
+    color: #BBBBBB;
+}
+
+.not-found {
+    padding: 40px;
+    text-align: center;
+}
+
+.not-found h2 {
+    font-size: 48px;
+    color: #FFCB05;
+    margin-bottom: 16px;
+}
+
+.not-found p {
+    font-size: 20px;
+    margin-bottom: 24px;
+    color: #FFFFFF;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 16px;
+    background-color: #FFCB05;
+    color: #00274C;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.back-home:hover {
+    background-color: #FFD700;
+    color: #00274C;
+}
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 16px;
+    background-color: #00274C;
+    color: #FFCB05;
+    cursor: pointer;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#back-to-top.show {
+    display: block;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        padding: 0px 120px;
+    }
+
+    img {
+        width: 60%;
+    }
+
+    main>div:first-of-type img {
+        width: 40%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    .info-grid div {
+        grid-column: auto;
+    }
+
+    .info-grid img {
+        max-width: 70%;
+    }
+
+    .tutoring-grid div:first-child {
+        grid-column: span 2;
+    }
+
+    .tutoring-grid div:last-child {
+        grid-column: span 1;
+    }
+
+    .food-pantry div img {
+        width: 30%;
+    }
+
+    .food-pantry div:first-child {
+        grid-column: 1 / -1;
+    }
+
+    .food-pantry div:first-child img {
+        width: 30%;
+    }
+
+    .food-pantry div:nth-child(2) {
+        grid-column: span 2;
+    }
+
+    .food-pantry div:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    .caps-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .caps-grid div {
+        grid-column: auto;
+    }
+
+    .caps-img {
+        width: 40%;
+    }
+
+    .index-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .index-grid section {
+        grid-column: auto;
+    }
+
+    .index-grid section:first-of-type {
+        grid-column: 1 / -1;
+    }
+}

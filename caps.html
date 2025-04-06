@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>CAPS</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="skip"><a href="#main">Skip to Main Content</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="food_pantry.html">Food Pantry</a></li>
+                <li><a href="caps.html" class="active">CAPS</a></li>
+                <li><a href="umsi_tutoring.html">UMSI Tutoring</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Counseling and Psychological Services (CAPS)</h1>
+    </header>
+
+    <main id="main">
+        <div>
+            <img src="images/CAPS1.png"
+                alt="A promotional image for Togetherall, a safe community to support mental health.">
+        </div>
+        <div>
+            <p>
+                University Health & Counseling (UHC) supports the health and well-being of the campus community.
+                We are inspired to help students realize their potential, cope with the stresses of life, work
+                productively,
+                and connect meaningfully with others.
+            </p>
+            <p>
+                UHC is made up of Counseling and Psychological Services (CAPS), which offers counseling services, and
+                University Health Service (UHS), which offers medical services. This website is about CAPS. For
+                information
+                about UHS, please visit the UHS website.
+            </p>
+            <p>
+                CAPS is committed to creating an environment based on our values of multicultural, multi-disciplinary
+                and
+                multi-theoretical practices that allow our diverse student body to access care, receive high quality
+                services
+                and take positive pathways to mental health. We are happy to offer both in-person and virtual services.
+            </p>
+        </div>
+        <div>
+            <img class="caps-img" src="images/CAPS2.png"
+                alt="Table with materials from CAPS, including brochures, flyers, and colorful stress-relief items"
+                width="400">
+        </div>
+        <br>
+        <div class="info-grid caps-grid">
+            <div>
+                <h2>Let's Talk</h2><br>
+                <img src="images/CAPS3.png" alt="Schedule for the University of Michigan's 'Let's Talk!' program"
+                    width="200"><br>
+                <p>“Let's Talk” is a free program that supports students starting their mental health journeys.
+                    It provides casual meetings with counselors during specific drop-in times for initial support and
+                    advice.</p>
+            </div>
+            <div>
+                <h2>Individual Peer Counseling</h2><br>
+                <img src="images/CAPS4.png" alt="Logo for CAPS Individual Peer Counseling" width="300"><br>
+                <p>Individual Peer Counseling (IPC) is designed to offer a new way to meet the needs of students
+                    across the University of Michigan. We are here to support student mental health and offer students a
+                    place to vent.</p>
+            </div>
+            <div>
+                <h2>Hours</h2><br>
+                <p>
+                    Monday - Thursday: 8am - 6pm<br>
+                    Friday: 8am - 5pm<br>
+                    Saturday & Sunday: Closed<br><br>
+                    Urgent/Crisis Support at CAPS:<br>
+                    Monday - Friday from 10am - 4:30pm
+                </p>
+            </div>
+            <div>
+                <h2>Contact</h2><br>
+                <p>
+                    Phone: 734-764-8312 (24hrs)<br>
+                    Email: caps-uofm@umich.edu<br><br>
+                    Michigan Union<br>
+                    530 South State Street<br>
+                    Suite 4079<br>
+                    Ann Arbor, MI 48109
+                </p>
+            </div>
+        </div>
+        <!-- Content and images taken from https://caps.umich.edu/ website's homepage. -->
+    </main>
+    <footer>
+        <div class="footer-image">
+            <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+        </div>
+        <div class="footer-links">
+            <p>© <span id="year"></span> University of Michigan School of Information</p>
+            <p>MSI Academic Advising | <a
+                    href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI
+                    Academic Advising</a></p>
+            <p>Food Pantry | <a href="https://mbc.studentlife.umich.edu/">Food Pantry</a></p>
+            <p>CAPS | <a href="https://caps.umich.edu/">Counseling and Psychological Services</a></p>
+            <p>UMSI Tutoring | <a href="https://sites.google.com/umich.edu/umsitutoring/home?authuser=0">UMSI
+                    Tutoring</a></p>
+        </div>
+    </footer>
+    <button id="back-to-top">Back to top</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const yearSpan = document.getElementById("year");
+            const currentYear = new Date().getFullYear();
+            yearSpan.textContent = currentYear;
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const backToTopButton = document.getElementById("back-to-top");
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 200) {
+                    backToTopButton.classList.add("show");
+                } else {
+                    backToTopButton.classList.remove("show");
+                }
+            });
+
+            backToTopButton.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
